@@ -6,3 +6,19 @@
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  width: 50%;
+  border-radius: 20%;
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: aqua;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-right: 5px;
+}

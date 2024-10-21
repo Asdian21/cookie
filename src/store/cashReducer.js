@@ -1,6 +1,6 @@
 const initialState = {
   // первоначальное состояние
-  cash: 0,
+  cash: 1000,
 };
 
 export const cashReducer = (store = initialState, action) => {
@@ -9,5 +9,7 @@ export const cashReducer = (store = initialState, action) => {
       return { ...store, cash: store.cash + action.payload }; // Добавляем деньги на счёт
     case "GET_CASH":
       return { ...store, cash: store.cash - action.payload }; // Снимаем деньги со счёта
+    default:
+      return store;
   }
 };
