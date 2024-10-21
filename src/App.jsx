@@ -6,7 +6,7 @@ function App() {
   const dispatch = useDispatch();
 
   const addCash = (cash) => {
-    dispatch({ type: "ADD_CASH", payload: cash });
+    dispatch({ type: "ADD_CASH", payload: cash }); // Передаём объект с ключами
   };
 
   const getCash = (cash) => {
